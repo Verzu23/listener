@@ -26,7 +26,7 @@ public class keepAwake {
         RestTemplate restTemplate = new RestTemplate();
         if(pin==null){
             GpioController gpio = GpioFactory.getInstance();
-            pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_18,"My LED",PinState.LOW);
+            pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01,"My LED",PinState.LOW);
         }
         int response=0;
         try {
